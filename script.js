@@ -1,13 +1,9 @@
 const button = document.getElementById('addButton');
-const input = document.getElementById('waterInput');
+const input = document.getElementById('HumanityInput');
 
-// Load the saved total, or use 0 if no value exists
-let totalWater = Number(localStorage.getItem('totalWater')) || 0;
+
 
 const totalWaterDisplay = document.getElementById('totalWater');
-
-// Display the saved total when the page loads
-totalWaterDisplay.textContent = `Total water intake: ${totalWater} Fluid Ounces`;
 
 button.addEventListener('click', () => {
     const waterAmount = parseFloat(input.value);
